@@ -8,6 +8,17 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Initially hide all sections */
+    section {
+      display: none;
+    }
+
+    /* Show the active section */
+    .active {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,10 +30,10 @@
 
   <nav>
     <ul class="container">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" onclick="showSection('about')">About Me</a></li>
+      <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+      <li><a href="#" onclick="showSection('certificates')">Certificates</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
     </ul>
   </nav>
 
@@ -84,5 +95,25 @@
   <footer>
     <p>© 2024 Muhammad Husain Bin Badrul Hisham | Powered by GitHub Pages</p>
   </footer>
+
+  <script>
+    // Show the clicked section and hide the others
+    function showSection(sectionId) {
+      // Hide all sections
+      let sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Show the selected section
+      let activeSection = document.getElementById(sectionId);
+      activeSection.classList.add('active');
+    }
+
+    // Default view when the page loads
+    window.onload = function() {
+      showSection('about'); // Show the About Me section by default
+    }
+  </script>
 </body>
 </html>
