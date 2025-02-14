@@ -1,71 +1,45 @@
-# Will You Be My Valentine? 💌
+# Do You Wanna Go Out With Me?
 
-This project is designed to be an interactive webpage to ask someone to be your Valentine. Please use this code as inspiration and avoid simply copying it without understanding or giving credit.
+This is an interactive webpage where users are asked if they want to go out. Please use this code as inspiration and avoid simply copying it without understanding or giving credit.
 
----
-## **🚀 Respect Open-Source**
-I built this for **fun & learning**. If you fork or modify it:  
-✔ **Use it for creativity, personal projects, or learning**  
-✔ **Give proper credit when using it in public**  
-✔ **Respect the original creator’s work**  
-❌ **DO NOT try to profit from free content**  
+## Features
 
- **If I find people selling this project, I will take action to prevent unauthorized use.**  
+- **Interactive Buttons**: Two buttons, "Yes" and "No", offer the user a simple interaction. When the user clicks "Yes," it triggers a function that could lead to a new page or action. The "No" button moves when hovered over.
 
 
+## Files
 
-## How It Works 
+- `index.html`: The main HTML file that contains the structure of the webpage.
+- `styles.css`: Contains the styles for the page, including the layout and visual aspects of the buttons and GIF.
+- `script.js`: A JavaScript file where you can add interactivity like the `nextPage()` function and button animations.
+- `yes.css`: Contains the styling for `yes.html`, which you will need to design as desired.
+- `styles.css`: Contains the styles for the initial page, including the layout and visual aspects of the buttons and GIF.
 
-This project consists of a simple webpage with a "Yes" and "No" button. When the user clicks the "No" button, the button text changes to a series of  messages, and the "Yes" button grows larger. If the user clicks the "Yes" button, they are redirected to a new page (`yes_page.html`).
+## Disclaimer
+Not all code is provided in this repository. This is an overview for inspiration.
 
-### Features:
-- **Interactive Buttons**: The "No" button cycles through , while the "Yes" button grows in size.
-- **Responsive Design**: The webpage is designed to work on all screen sizes.
+## Key Functions
 
----
+- **`nextPage()`**: Redirects the user to `yes_page.html` when the "Yes" button is clicked.
+- **`moveButton()`**: Makes the "No" button move to random positions on the screen and creates fun animations.
 
-## How to Use 
+## How to Use
 
-1. **Download the Files**:
-   - Clone this repository or download the `index.html`, `styles.css`,`yes_style.css`,`yes_page.html` and `script.js` files.
-
-2. **Open the Project**:
-   - Open the `index.html` file in your web browser.
-
-
----
-
-## A Note on Code Usage 
-
-While I am happy to share this project, I encourage you to use it as inspiration.
-If you use this code as a base for your own project, please give credit where it's due. A simple shoutout or link back to this repository is appreciated!
-
-
----
-
-## Code Overview 
-
-### Files:
-
-- `index.html`: The main HTML file that structures the webpage.
-- `styles.css`: The CSS file that styles the webpage.
-- `script.js`: The JavaScript file that handles the button interactions.
-- `yes_page.html`: The yes page that sturctures the webpage.
-- `yes_style.css`: The css file that styles the yes webpage.
-
-
-
-### Key Functions:
-
-- `handleNoClick()`: Changes the "No" button text and increases the size of the "Yes" button.
-- `handleYesClick()`: Redirects the user to `yes_page.html`.
+1. Download or clone the repository.
+2. Open `index.html` in your browser to start interacting with the page.
 
 ---
 
 ## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ---
 
-Enjoy 💖
+## A Note on Code Usage
+
+Feel free to use this project as inspiration for your own interactive web pages.If you build upon this code or use it as a starting point for your project, a simple shoutout or link back to this repository is appreciated.
+
+---
+
+Enjoy  💖
